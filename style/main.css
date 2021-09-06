@@ -1,0 +1,220 @@
+:root{
+    --color-dark: #09070e;
+}
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    outline: none;
+    font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6,
+p,li,strong,span{
+    font-size: 14px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 100%;
+    background-color: #e8e8e8;
+}
+div#container{
+    width: 100%;
+    max-width: 1440px;
+}
+div#container
+header{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-dark);
+    height: 70px;
+}
+header
+div.logo-header{
+    width: 5%;
+    min-width: 200px;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.logo-header span{
+    color: #fff;
+    font-size: 25px;
+    padding: 0 0 5px 0;
+    border-bottom: solid 2px #fff;
+}
+
+header
+nav.nav-header{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+div.menu-nav{
+    width: 90%;
+    max-width: 780px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+div.menu-nav span{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px;
+    margin: 0 10px;
+    transition: 350ms ease;
+}
+div.menu-nav span:hover{
+    background-color: #f4f4f428;
+}
+div.menu-nav span.link-selec{
+    border-bottom: 1px solid #fff;
+    background-color: #f4f4f428;
+}
+
+input#checar{
+    position: absolute;
+    top: -100%;
+}
+
+label#burguer{
+    display: none;
+}
+
+@media screen and (max-width: 900px){
+    label#burguer{
+        width: 50px;
+        height: 45px;
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+        position: absolute;
+        top: 7px;
+        right: 40px;
+        z-index: 99;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    div.line{
+        border-radius: 5px;
+        background-color: #000;
+        width: 45px;
+        height: 5px;
+        margin: 4px 0;
+    }
+    div.line:nth-child(1),div.line:nth-child(3){
+        transition: 200ms ease all;
+    }
+    header
+    nav.nav-header{
+        width: 0px;
+        height: 0%;
+    }
+    div.menu-nav{
+        position: absolute;
+        z-index: 10;
+        top: 0px;
+        right: -100%;
+        background-color: rgb(29, 10, 83);
+        width: 200px;
+        height: 100vh;
+        padding: 100px 0 0 0;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: initial;
+        transition: 200ms ease all;
+    }
+    input#checar:checked ~ div.menu-nav{
+        right: 0%;
+    }
+
+    input#checar:checked ~ label#burguer div.line:nth-child(1){
+        transform: rotate(-45deg);
+        position: relative;
+        top: 12px;
+    }
+
+    input#checar:checked ~ label#burguer div.line:nth-child(2){
+        opacity: 0;
+    }
+
+    input#checar:checked ~ label#burguer div.line:nth-child(3){
+        transform: rotate(-135deg);
+        position: relative;
+        top: -15px;
+    }
+}
+div.footer{
+    width: 100%;
+    max-width: 1440px;
+}
+div.footer
+footer{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+div.footer
+footer span{
+    color: #fff;
+    font-size: 30px;
+    font-family: Arial,sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+div.footer
+footer span strong{
+    color: #fff;
+    font-size: 45px;
+    font-family: "Rancho",sans-serif;
+    padding: 0 0 0 15px;
+}
+div.top-footer{
+    margin: 0 0 10px 0;
+    padding: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: 200ms ease-in;
+}
+div.top-footer:hover{
+    background-color: #fbff27;
+}
+div.top-footer img{
+    width: 45px;
+    height: 45px;
+    transition: 200ms ease-in;
+}
+div.top-footer:hover img{
+    transform: scale(1.1);
+}
