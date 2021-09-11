@@ -23,6 +23,79 @@ div.container-sec1{
     justify-content: center;
     flex-wrap: nowrap;
 }
+div.cx_banner{
+    margin: 25px 0 0 0;
+    width: 100%;
+    height: 100vh;
+    min-height: 120px;
+    max-height: 200px;
+}
+div.banner{
+    width: 100%;
+    height: 100%;
+    background-color: #9d0491;
+}
+
+div.content-banner{
+    width: 100%;
+    height: 100%;
+    background-image: url(../src/bnr-cbt.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+div.txt-bnr{
+    width: 100%;
+    max-width: 400px;
+    min-width: 200px;
+}
+
+div.txt-bnr h1 , div.txt-bnr h3{ 
+    color: #fff; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+div.txt-bnr h1::before , 
+div.txt-bnr h3::before{
+    content: " ";
+    margin: 0 10px 0 0;
+    width: 10px;
+    height: 40px;
+    background-color: #f36a0e;
+    display: inline-block;
+}
+
+div.txt-bnr h1::before{border-top-left-radius: 16px;border-top-right-radius: 16px;}
+
+div.txt-bnr h3::before{border-bottom-left-radius: 16px;border-bottom-right-radius: 16px;}
+
+div.txt-bnr h1{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+div.txt-bnr h3{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 900px){ div.content-banner{background-position-x: 40%;}}
+
+@media screen and (max-width: 600px){
+    div.txt-bnr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    div.txt-bnr h1::before , div.txt-bnr h3::before{content: none;}
+}
 div.title-c-sec1{
     width: 100%;
     border-bottom: 2px solid #000;
