@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!--
+    "notranslate" impede a tradução da página pois o SCRIPT precisa 
+    dos nomes em Português para organizar os produtos alfabeticamente.
+-->
+<html lang="pt-br" class="notranslate" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/home.css">
+    <link rel="stylesheet" href="./style/modal.css">
+    <title>Página de Produto</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="logo-header">
+                <span>Loja LOGO</span>
+            </div>
+
+            <nav class="nav-header">
+
+                <input type="checkbox" id="checar">
+
+                <div class="menu-nav">
+                    <span class="link-pag">Quem Somos</span>
+                    <span class="link-pag">Contato</span>
+                    <span class="link-pag link-selec">Produtos</span>
+                    <span class="link-pag">Seja parceiro</span>
+                </div>
+
+                <label for="checar" id="burguer">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </label>
+            </nav>
+        </header>
+
+        <div id="cont-sec1">
+            <section class="sec1">
+                <div class="container-sec1">
+                    <div class="title-c-sec1">
+                        <h1>Produtos</h1>
+                    </div>
+    
+                    <div class="cont-c-sec1">
+                        <div class="ordenar-sec1">
+    
+                            <strong>Ordenar por:</strong>
+    
+                            <div class="buttons-ordenar">
+                                <button id="js-ordem-az" class="btn-ord">A-Z</button>
+                                <button id="js-ordem-za" class="btn-ord">Z-A</button>
+                            </div>
+                        </div>
+    
+                        <div class="container-produtos-info">
+                            <div class="container-info">
+                                <div class="info">
+                                    <strong class="str-marca">Categoria</strong>
+                                    <div class="marca">
+                                        <div class="campo-cat-marc js_categoria_ativa">
+                                            Todos
+                                        </div>
+                                        <div class="campo-cat-marc">
+                                            Camiseta
+                                        </div>
+                                        <div class="campo-cat-marc">
+                                            Moletom
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-produtos">
+                                <div id="produtos-cont">
+                                                                    
+                                    <div class="produto js-produto">
+                                        <img src="./src/camisas/cm-ordoRealitas-preta.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Camiseta Ordo Realista - Preto</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">79.90</span>
+                                            <span class="preco-atual js_preco_atual">59.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/camisas/cm-injustica.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Camiseta Injustiça - Preto</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">79.90</span>
+                                            <span class="preco-atual js_preco_atual">59.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/moletom/m-basico-ordoRealitas.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Moletom Ordo Realitas - Branco</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">239.90</span>
+                                            <span class="preco-atual js_preco_atual">179.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/camisas/cm-ordoRealitas-branca.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Camiseta Ordo Realista - Branca</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">79.90</span>
+                                            <span class="preco-atual js_preco_atual">59.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/camisas/cm-fresta.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Camiseta Fresta - Preto</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">79.90</span>
+                                            <span class="preco-atual js_preco_atual">59.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/moletom/m-anfitriao.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Moletom Anfitrião - Preto</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">239.90</span>
+                                            <span class="preco-atual js_preco_atual">179.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/moletom/m-fresta.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Moletom Fresta - Preto</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">239.90</span>
+                                            <span class="preco-atual js_preco_atual">189.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/moletom/m-injustica.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Moletom Injustiça - Preto</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">239.90</span>
+                                            <span class="preco-atual js_preco_atual">189.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/moletom/m-preto-desconjuracao.jpg" class="img-produto">
+                                        <span translate="notranslate" class="txt-produto js-txt-produto notranslate">Moletom Desconjuração - Preto</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">239.90</span>
+                                            <span class="preco-atual js_preco_atual">179.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+
+                                    <div class="produto js-produto">
+                                        <img src="./src/camisas/cm-anfitriao.jpg" class="img-produto">
+                                        <span class="txt-produto js-txt-produto">Camiseta Anfitrião - Preta</span>
+                                        <div class="txt-preco">
+                                            <span class="preco-antes">79.90</span>
+                                            <span class="preco-atual js_preco_atual">59.90</span>
+                                        </div>
+                                        <button class="btn-produto">Ver Mais</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="modal-container" class="md-cont-int">
+                            <div class="bg-modal">
+                                <div class="modal">
+                                    <div class="close">&times;</div>
+                                    <div class="cx-modal">
+                                        <div class="img-cx" id="caixa-img">
+
+                                        </div>
+
+                                        <div class="txt-cx">
+                                            <h6 id="js_titulo_modal"></h6>
+                                            <div class="cx-preco">
+                                                <div class="valor">
+                                                    <div class="valor_de" id="valor_de">
+                                                        
+                                                    </div>
+                                                    <span class="valor_por" id="valor_por">
+                                                        
+                                                    </span>
+                                                </div>
+                                                <div class="parcela">
+                                                    <p class="valor_parc">
+                                                        <!--inner after-->                                                        
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="buy-item">
+                                                <div class="btnBuy">
+                                                    <div class="carBuy"><img src="./src/carrinho-de-compras.svg"></div>
+                                                    <p>Comprar</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <div class="top-footer">
+                    <img src="./src/top.svg" alt="Top">
+                </div>
+
+                <span>Site feito por: <strong>Antonio Sala</strong></span>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/ordem.js"></script>
+    <script src="./js/modal.js"></script>
+    
+    <script>document.querySelector("div.top-footer").addEventListener("click",()=>{window.scrollTo(0,0);});</script>
+</body>
+</html>
